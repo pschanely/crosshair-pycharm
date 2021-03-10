@@ -1,0 +1,63 @@
+<idea-plugin>
+    <id>ch.mristin.crosshair-pycharm</id>
+    <name>crosshair-pycharm</name>
+    <vendor email="marko@ristin.ch" url="http://github.com/mristin">Marko Ristin</vendor>
+
+    <change-notes><![CDATA[
+    <h2>Versioning</h2>
+    <p>We follow a bit unusual semantic versioning schema:</p>
+    <ul>
+        <li>
+            X is the oldest supported major version of
+            <a href="https://pypi.org/project/crosshair-tool/">crosshair-tool</a>,
+        </li>
+        <li>
+            Y is the minor version (new or modified features), and
+        </li>
+        <li>
+            Z is the patch version (only bug fixes).
+        </li>
+    </ul>
+
+    <h2>version 0.0.1</h2>
+    <p>This is the initial kick-off version.</p>
+    <p>It requires the version 0.10 of <a href="https://pypi.org/project/crosshair-tool/">crosshair-tool</a>
+    or newer.</p>
+    <p>Features:</p>
+    <ul>
+        <li>Test automatically a module, a directory or a function</li>
+        <li>Watch a module or a function and test automatically upon changes</li>
+    </ul>
+    ]]></change-notes>
+
+    <description><![CDATA[
+    Crosshair-pycharm allows you to automatically verify your Python code using
+    <a href="https://pypi.org/project/crosshair-tool/">crosshair-tool</a>.
+    ]]></description>
+
+    <idea-version since-build="201.6668.115" />
+
+    <depends>com.intellij.modules.python</depends>
+
+    <actions>
+        <group id="ch.ristin.crosshair_pycharm.ActionGroup"
+               text="Crosshair"
+               popup="true"
+               compact="true"
+               class="ch.ristin.crosshair_pycharm.ActionGroup">
+            <action id="ch.ristin.crosshair_pycharm.CheckAction"
+                    class="ch.ristin.crosshair_pycharm.CheckAction"
+                    text="Check"
+                    description="Check with crosshair-tool"/>
+            <action id="ch.ristin.crosshair_pycharm.WatchAction"
+                    class="ch.ristin.crosshair_pycharm.WatchAction"
+                    text="Watch"
+                    description="Watch and continuously check with crosshair-tool"/>
+
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+        </group>
+
+    </actions>
+
+</idea-plugin>
