@@ -16,8 +16,8 @@ Use [Plug-in manager] in your PyCharm: File ⟶ Settings ⟶ Plugins.
 
 Select `crosshair-pycharm`.
 
-<img src="readme/settings.png" width=300 alt="settings" border=1/>
-<img src="readme/settings-plugins.png" width=400 alt="settings-plugins" border=1/>
+<img src="readme/settings.png" width=300 alt="settings" />
+<img src="readme/settings-plugins.png" width=400 alt="settings-plugins" />
 
 **Install crosshair-tool**.
 As crosshair-pycharm is only a thin wrapper around [crosshair-tool], please install
@@ -25,9 +25,9 @@ As crosshair-pycharm is only a thin wrapper around [crosshair-tool], please inst
 
 For example, through: File ⟶ Settings ⟶ Project ⟶ Python Interpreter.
 
-<img src="readme/settings.png" width=300 alt="settings" border=1/>
-<img src="readme/settings-project-interpreter.png" width=600 alt="settings-project-interpreter" border=1/>
-<img src="readme/settings-install-package.png" width=600 alt="settings-install-package" border=1/>
+<img src="readme/settings.png" width=300 alt="settings" />
+<img src="readme/settings-project-interpreter.png" width=600 alt="settings-project-interpreter" />
+<img src="readme/settings-install-package.png" width=600 alt="settings-install-package" />
 
 If you are writing a package using [`setup.py`], you might want to include
 [crosshair-tool] in [your test dependencies].
@@ -40,18 +40,18 @@ If you are writing a package using [`setup.py`], you might want to include
 You can use crosshair-pycharm from within an editor (with an open Python file) through
 the editor pop-up menu:
 
-<img src="readme/editor-popup.png" width=900 alt="editor pop-up menu" border=1/>
+<img src="readme/editor-popup.png" width=900 alt="editor pop-up menu" />
 
 Alternatively, you can select a file in the project view and access crosshair-pycharm
 through the project view pop-up menu:
 
-<img src="readme/project-view-popup-file.png" width=450 alt="project view pop-up menu on a file" border=1/>
+<img src="readme/project-view-popup-file.png" width=450 alt="project view pop-up menu on a file" />
 
 A module containing multiple submodules can also be selected in which case both 
 the parent module, and the children modules are going to be verified (or in case of 
 `watch` command, watched recursively):
 
-<img src="readme/project-view-popup-directory.png" width=450 alt="project view pop-up menu on a directory" border=1/>
+<img src="readme/project-view-popup-directory.png" width=450 alt="project view pop-up menu on a directory" />
 
 You can also select a directory which is not a proper Python module (*e.g.*, lacks 
 the `__init__.py`).
