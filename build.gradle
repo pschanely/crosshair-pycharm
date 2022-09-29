@@ -1,13 +1,17 @@
 plugins {
     id 'java'
-    id 'org.jetbrains.intellij' version '0.7.2'
+    id 'org.jetbrains.intellij' version '0.7.3'
 }
 
 group 'ch.mristin'
-version '0.0.1'
+version '0.0.2'
 
 repositories {
     mavenCentral()
+}
+
+compileJava {
+    options.release = 11
 }
 
 dependencies {
@@ -17,13 +21,12 @@ dependencies {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    pluginName project.name
-    version "2020.1"
-    type "PC"
-    updateSinceUntilBuild false
-    downloadSources true
-    plugins "python-ce"
-
+    pluginName = project.name
+    version = "2020.2"
+    type = "PC"
+    updateSinceUntilBuild = true
+    downloadSources = true
+    plugins = ["python-ce"]
 }
 
 test {

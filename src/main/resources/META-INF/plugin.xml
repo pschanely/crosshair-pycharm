@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>ch.mristin.crosshair-pycharm</id>
     <name>crosshair-pycharm</name>
-    <vendor email="marko@ristin.ch" url="http://github.com/mristin">Marko Ristin</vendor>
+    <vendor url="https://plugins.jetbrains.com/organizations/CrossHair">CrossHair</vendor>
 
     <change-notes><![CDATA[
     <h2>Versioning</h2>
@@ -28,6 +28,11 @@
         <li>Test automatically a module, a directory or a function</li>
         <li>Watch a module or a function and test automatically upon changes</li>
     </ul>
+
+    <h2>version 0.0.2</h2>
+    <p>This release is published under an organization rather than an individual.</p>
+    <p>There are only configuration changes in this release.</p>
+
     ]]></change-notes>
 
     <description><![CDATA[
